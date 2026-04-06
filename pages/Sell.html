@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/Sell.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    
+  </style>
+  <body>
+    <!-- Top Bar -->
+    <div class="topbar">
+      <div class="left">
+        <i class="fa-solid fa-phone"></i> +91-99710 19000 &nbsp;&nbsp; ✉
+        contact@builderfloor.in
+      </div>
+      <div class="right">
+        <button id="login">Login</button> |
+        <button id="register">Register</button>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/images/logo_.png" alt="BuilderFloor.in" />
+        </a>
+      </div>
+
+      <ul class="menu">
+        <li><a href="../pages/Buy.html">Buy</a></li>
+        <li><a href="../pages/Sell.html">Sell</a></li>
+        <li><a href="../pages/Rent.html">Rent</a></li>
+        <li><a href="../pages/Collab.html">Collaboration</a></li>
+        <li><a href="../pages/Sell.html">Post Property</a></li>
+        <li><a href="../pages/ContactUs.html">Contact Us</a></li>
+      </ul>
+      <a href="../pages/Sell.html">
+        <button class="post-btn">Post Free Property Ad</button>
+      </a>
+    </div>
+    <section class="post-hero">
+      <div class="hero-content">
+        <h1>List Your Property</h1>
+        <p>Reach thousands of verified buyers across India</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature-box">
+        <div class="icon green"><i class="fa-regular fa-circle-check"></i></div>
+        <h3>Free Property Listing</h3>
+        <p>No charges for basic listing</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon orange">
+          <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <h3>10,000+ Daily Visitors</h3>
+        <p>Maximum exposure</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon green"><i class="fa-regular fa-circle-check"></i></div>
+        <h3>Verified Buyers</h3>
+        <p>Connect with serious buyers</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon orange">
+          <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <h3>Expert Support</h3>
+        <p>Get help anytime</p>
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- FORM SECTION -->
+    <section class="form-section">
+      <!-- STEP HEADER -->
+      <div class="step-header">
+        <div class="step active">
+          <span>1</span>
+          <p>Property Details</p>
+        </div>
+        <div class="line"></div>
+
+        <div class="step" id="active2">
+          <span>2</span>
+          <p>Pricing & Features</p>
+        </div>
+        <div class="line"></div>
+
+        <div class="step" id="active3">
+          <span>3</span>
+          <p>Photos & Contact</p>
+        </div>
+      </div>
+      <div class="form-card" id="form1">
+        <h2>Property Details</h2>
+
+        <form class="form-grid">
+          <!-- Property Type -->
+          <div class="form-group">
+            <label>Property Type *</label>
+            <select required>
+              <option value="">Select property type</option>
+              <option>Builder Floor</option>
+              <option>Apartment/Flat</option>
+              <option>Independent House/Villa</option>
+              <option>Penthouse</option>
+              <option>Plot/Land</option>
+              <option>Commercial Property</option>
+            </select>
+          </div>
+
+          <!-- Property For -->
+          <div class="form-group">
+            <label>Property For *</label>
+            <select required>
+              <option value="">Select</option>
+              <option>Sale</option>
+              <option>Rent</option>
+              <option>Collaboration</option>
+            </select>
+          </div>
+
+          <!-- Title -->
+          <div class="form-group full">
+            <label>Property Title *</label>
+            <input
+              type="text"
+              required
+              placeholder="e.g., Spacious 3 BHK Builder Floor in South Delhi" />
+          </div>
+
+          <!-- Group of 3 -->
+          <div class="grpof3">
+            <div class="form-group Bhk">
+              <label>BHK *</label>
+              <select required>
+                <option value="">Select</option>
+                <option>1 BHK</option>
+                <option>2 BHK</option>
+                <option>3 BHK</option>
+                <option>4 BHK</option>
+                <option>5 BHK</option>
+                <option>5+ BHK</option>
+              </select>
+            </div>
+
+            <div class="form-group Bathroom">
+              <label>Bathrooms *</label>
+              <select required>
+                <option value="">Select</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5+</option>
+              </select>
+            </div>
+
+            <div class="form-group Furnishing">
+              <label>Furnishing *</label>
+              <select required>
+                <option value="">Select</option>
+                <option>Fully Furnished</option>
+                <option>Semi-Furnished</option>
+                <option>Unfurnished</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Area -->
+          <div class="form-group">
+            <label>Built-up Area (sq ft) *</label>
+            <input type="number" required placeholder="0" />
+          </div>
+
+          <!-- Floor -->
+          <div class="form-group">
+            <label>Floor Number</label>
+            <input type="text" placeholder="e.g., 2nd Floor or Ground Floor" />
+          </div>
+
+          <!-- Description -->
+          <div class="form-group full">
+            <label>Property Description *</label>
+            <textarea
+              required
+              placeholder="Describe your property - key features, nearby landmarks, amenities...."></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-footer">
+            <button type="button" class="next-btn" id="next-btn1">
+              Next: Pricing & Features
+            </button>
+          </div>
+        </form>
+      </div>
+      <!------------------------------------------------------------------------------->
+
+      <div class="form-card" id="form2">
+        <h2>Pricing & Features</h2>
+
+        <form class="form-grid">
+          <!-- Expected Price -->
+          <div class="form-group">
+            <label>Expected Price *</label>
+            <div class="price-input">
+              <span>₹</span>
+              <input
+                id="ExpPrice"
+                type="number"
+                placeholder="e.g., 35000000"
+                required />
+            </div>
+            <small class="small-alert">Enter amount in rupees (₹)</small>
+          </div>
+
+          <!-- Price Negotiable -->
+          <div class="form-group negotiable">
+            <label>Price Negotiable?</label>
+            <select required>
+              <option value="">Select</option>
+              <option>Yes, Negotiable</option>
+              <option>No, Fixed Price</option>
+            </select>
+          </div>
+
+          <!-- Location Heading -->
+          <div class="form-group full">
+            <h3 class="Location-heading">Location Details *</h3>
+          </div>
+
+          <!-- Project Name -->
+          <div class="form-group">
+            <input type="text" placeholder="Building/Project Name" />
+          </div>
+
+          <!-- Locality -->
+          <div class="form-group">
+            <input type="text" placeholder="Locality/Sector" />
+          </div>
+
+          <!-- City -->
+          <div class="grpof3">
+            <div class="form-group city">
+              <select required>
+                <option value="">City *</option>
+                <option>Delhi</option>
+                <option>Gurgaon</option>
+                <option>Noida</option>
+                <option>Mumbai</option>
+                <option>Bangalore</option>
+                <option>Pune</option>
+              </select>
+            </div>
+
+            <!-- State -->
+            <div class="form-group state">
+              <input type="text" placeholder="State" />
+            </div>
+
+            <!-- PIN -->
+            <div class="form-group pin">
+              <input type="number" placeholder="PIN Code" />
+            </div>
+          </div>
+          <!-- Features Heading -->
+          <div class="form-group full">
+            <h3 class="key-heading">Key Features</h3>
+          </div>
+
+          <!-- Features -->
+          <div class="features-grid full">
+            <label><input type="checkbox" /> Covered Parking</label>
+            <label><input type="checkbox" /> Power Backup</label>
+            <label><input type="checkbox" /> Gated Security</label>
+
+            <label><input type="checkbox" /> Modular Kitchen</label>
+            <label><input type="checkbox" /> Lift Available</label>
+            <label><input type="checkbox" /> Park Facing</label>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-footer">
+            <button type="button" class="back-btn" id="back-btn1">Back</button>
+            <button type="button" class="next-btn" id="next-btn2">
+              Next: Photos & Contact
+            </button>
+          </div>
+        </form>
+      </div>
+      <!------------------------------------------------------------------------------->
+
+      <div class="form-card" id="form3">
+        <h2>Photos & Contact Information</h2>
+        <form class="form-grid">
+          <!-- Upload Section -->
+          <div class="form-group full">
+            <label>Upload Property Photos *</label>
+
+            <div class="upload-box">
+              <input
+                type="file"
+                multiple
+                accept="image/*"
+                hidden
+                id="fileUpload" />
+
+              <label for="fileUpload" class="upload-label">
+                <i class="fa-regular fa-image"></i>
+                <p>Click to upload or drag and drop</p>
+
+                <span>PNG, JPG up to 10MB (Max 20 photos)</span>
+                <br />
+                <br />
+
+                <div class="upload-photos">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>Choose Files
+                </div>
+              </label>
+            </div>
+            <p>Properties with photos get 5x more views!</p>
+          </div>
+          <div class="hr"></div>
+
+          <!-- Contact Name -->
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" placeholder="Enter your full name" required />
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <label>Mobile Number *</label>
+            <input type="tel" placeholder="Enter Mobile number" required />
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter email" />
+          </div>
+
+          <!-- i am  -->
+
+          <div class="form-group">
+            <label>I am *</label>
+            <select required>
+              <option value="">Select</option>
+              <option>Property Owner</option>
+              <option>Real Estate Agent</option>
+              <option>Builder/Developer</option>
+            </select>
+          </div>
+          <!-- Info Box -->
+          <div class="review-box">
+            <div class="icon green" id="review-icon">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+
+            <div class="review-content">
+              <h4>Your listing will be reviewed</h4>
+              <p>
+                Our team will verify your property details and publish it within
+                24 hours. You'll receive notifications on your registered mobile
+                and email.
+              </p>
+            </div>
+          </div>
+
+          <!-- Terms Checkbox -->
+          <div class="terms">
+            <label>
+              <input type="checkbox" required />
+              I agree to the Terms & Conditions and confirm that all information
+              provided is accurate
+            </label>
+          </div>
+          <!-- Submit -->
+          <div class="form-footer">
+            <button type="button" class="back-btn" id="back-btn2">Back</button>
+            <button type="submit" class="submit-btn" id="submit-btn">
+              Submit Property Listing
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <section class="sell-pricing">
+      <div class="sell-container">
+        <div class="sell-header">
+          <h2 class="sell-title">Upgrade Your Listing</h2>
+          <p class="sell-subtitle">
+            Get more visibility with our premium plans
+          </p>
+        </div>
+
+        <div class="sell-plans">
+          <!-- FREE -->
+          <div class="sell-card">
+            <span class="sell-badge free-badge">Free</span>
+
+            <div class="grp1">
+              <h3>Basic Listing</h3>
+              <h1>₹0</h1>
+            </div>
+            <ul>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Listed for 90 days
+              </li>
+              <li><i class="fa-regular fa-circle-check"></i> Up to 5 photos</li>
+              <li><i class="fa-regular fa-circle-check"></i> Basic support</li>
+            </ul>
+
+            <button class="sell-btn disabled">Selected</button>
+          </div>
+
+          <!-- FEATURED -->
+          <div class="sell-card featured">
+            <span class="sell-badge featured-badge">Featured</span>
+            <div class="grp1">
+              <h3>Featured Listing</h3>
+              <h1>₹999</h1>
+            </div>
+            <ul>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Listed for 180 days
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Up to 20 photos
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Featured on homepage
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Priority support
+              </li>
+            </ul>
+
+            <button class="sell-btn primary">Upgrade Now</button>
+          </div>
+
+          <!-- PREMIUM -->
+          <div class="sell-card premium">
+            <span class="sell-badge premium-badge">Premium</span>
+            <div class="grp1">
+              <h3>Premium Listing</h3>
+              <h1>₹1,999</h1>
+            </div>
+            <ul>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Listed for 365 days
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Unlimited photos
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Top position in
+                search
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Social media
+                promotion
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Dedicated support
+              </li>
+            </ul>
+
+            <button class="sell-btn secondary">Upgrade Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Column -->
+        <div class="footer-col left-col">
+          <h2 class="footer-logo">🏢 BuilderFloor.in</h2>
+
+          <p class="tagline">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your
+            Property Partner
+          </p>
+
+          <p class="footer-desc">
+            India's most trusted platform for builder floors, apartments, and
+            residential properties. Find your dream home with verified listings
+            across major cities.
+          </p>
+
+          <p><i class="fa-solid fa-phone"></i> +91-9876543210</p>
+          <br />
+          <p><i class="fa-solid fa-envelope"></i> contact@builderfloor.in</p>
+          <br />
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Connaught Place, New Delhi - 110001, India
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <!-- Property Types -->
+        <div class="footer-col">
+          <h3>Property Types</h3>
+          <ul>
+            <li><a href="#">Builder Floors</a></li>
+            <li><a href="#">Apartments</a></li>
+            <li><a href="#">Independent Houses</a></li>
+            <li><a href="#">Villas</a></li>
+            <li><a href="#">Plots/Land</a></li>
+          </ul>
+        </div>
+
+        <!-- Popular Cities -->
+        <div class="footer-col">
+          <h3>Popular Cities</h3>
+          <ul>
+            <li><a href="#">Delhi NCR</a></li>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Pune</a></li>
+            <li><a href="#">Hyderabad</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="footer-bottom">
+        <p>
+          © 2025 BuilderFloor.in. All rights reserved. India's trusted real
+          estate platform.
+        </p>
+
+        <div class="social">
+          <span>Follow Us:</span>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <p class="disclaimer">
+        Disclaimer: BuilderFloor.in is an intermediary platform for property
+        listings. We are not responsible for any transactions between buyers and
+        sellers. All property information should be independently verified.
+      </p>
+    </footer>
+
+    <!-- -----------Login-------------------------------------- -->
+    <div class="login-modal" id="loginModal">
+      <div class="login-box">
+        <!-- Close Button -->
+        <button class="close-btn">&times;</button>
+
+        <h2>Welcome Back</h2>
+        <p class="sub-text">Login to access your dashboard</p>
+        <p class="sub-text small">Enter your credentials to log in</p>
+
+        <!-- Social Login -->
+        <button class="social-btn google">
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png"
+            alt="Google logo"
+            style="height: 15px; width: 15px" />
+          Continue with Google
+        </button>
+
+        <button class="social-btn facebook">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/960px-Facebook_Logo_2023.png"
+            alt="Facebook logo"
+            style="height: 15px; width: 15px; border-radius: 20px" />
+          Continue with Facebook
+        </button>
+
+        <!-- Divider -->
+        <div class="divider">
+          <span>Or continue with</span>
+        </div>
+
+        <!-- Toggle -->
+        <div class="toggle">
+          <button class="active" id="Email">
+            <i class="fa-regular fa-envelope"></i> &nbsp; Email
+          </button>
+          <button id="Mobile">
+            <i class="fa-solid fa-mobile-screen-button"></i> &nbsp; Mobile
+            Number
+          </button>
+        </div>
+
+        <!-- Form -->
+        <form id="emailForm">
+          <label>Email Address</label>
+          <input type="email" placeholder="you@example.com" required />
+
+          <label>Password</label>
+          <div class="password-field">
+            <input type="password" placeholder="Enter password" required />
+            <i class="fa-regular fa-eye"></i>
+          </div>
+
+          <a href="#" class="forgot">Forgot Password?</a>
+
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <form id="otpForm">
+          <!-- STEP 1: MOBILE -->
+          <div id="step1">
+            <label>Mobile Number</label>
+            <div class="phone-input">
+              <span>+91</span>
+              <input
+                type="tel"
+                maxlength="10"
+                pattern="[0-9]{10}"
+                placeholder="Enter mobile number"
+                required />
+            </div>
+
+            <button type="submit" class="login-btn" id="sendOtp">
+              Send OTP
+            </button>
+          </div>
+
+          <!-- STEP 2: OTP -->
+          <div id="step2" class="hidden">
+            <label>Enter OTP</label>
+
+            <input type="tel" required />
+
+            <p class="resend">Didn't receive OTP?</p>
+            <a href="#" id="Resend">Resend OTP</a>
+            <a href="" id="Change-num">change number</a>
+
+            <br /><br />
+
+            <button type="submit" class="login-btn">Verify OTP</button>
+          </div>
+        </form>
+
+        <p class="p-signup">
+          Don't have an account? <a href="#" id="p-signup">Sign Up</a>
+        </p>
+
+        <p class="terms">
+          By continuing, you agree to our <a href="#">Terms of Service</a> and
+          <a href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- -------------------Register-------------------------------------------------------------------------------- -->
+    <div class="register-modal" id="registerModal">
+      <div class="register-box">
+        <!-- Close Button -->
+        <button class="close-btn2">&times;</button>
+
+        <h2>Create Account</h2>
+        <p class="sub-text">Sign up to list and manage properties</p>
+        <p class="sub-text small">Enter your details to create an account</p>
+
+        <!-- Social Login -->
+        <button class="social-btn google">
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png"
+            alt="Google logo"
+            style="height: 15px; width: 15px" />
+          Continue with Google
+        </button>
+
+        <button class="social-btn facebook">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/960px-Facebook_Logo_2023.png"
+            alt="Facebook logo"
+            style="height: 15px; width: 15px; border-radius: 20px" />
+          Continue with Facebook
+        </button>
+
+        <!-- Divider -->
+        <div class="divider">
+          <span>Or continue with</span>
+        </div>
+
+        <!-- Toggle -->
+        <div class="toggle">
+          <button class="active" id="Email1">
+            <i class="fa-regular fa-envelope"></i> &nbsp; Email
+          </button>
+          <button id="Mobile1">
+            <i class="fa-solid fa-mobile-screen-button"></i> &nbsp; Mobile
+            Number
+          </button>
+        </div>
+
+        <!-- Form -->
+        <form id="emailForm1">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your full name" required />
+
+          <label>Email Address</label>
+          <input type="email" placeholder="you@example.com" required />
+
+          <label>Password</label>
+          <div class="password-field">
+            <input type="password" placeholder="Enter password" required />
+            <i class="fa-regular fa-eye"></i>
+          </div>
+          <br />
+          <button type="submit" class="login-btn">Create Account</button>
+        </form>
+
+        <form id="otpForm1">
+          <!-- STEP 1: MOBILE -->
+          <div id="step3">
+            <label id="nameInputlabel">Full Name</label>
+            <input
+              id="nameInput"
+              type="text"
+              placeholder="Enter your full name"
+              required />
+            <label>Mobile Number</label>
+            <div class="phone-input">
+              <span>+91</span>
+              <input
+                id="mobileInput1"
+                type="tel"
+                maxlength="10"
+                pattern="[0-9]{10}"
+                placeholder="Enter mobile number"
+                required />
+            </div>
+
+            <button type="submit" class="login-btn" id="sendOtp1">
+              Send OTP
+            </button>
+          </div>
+
+          <!-- STEP 2: OTP -->
+          <div id="step4" class="hidden">
+            <label>Enter OTP</label>
+
+            <input type="tel" required />
+
+            <p class="resend">Didn't receive OTP?</p>
+            <a href="#" id="Resend">Resend OTP</a>
+            <a href="" id="Change-num1">change number</a>
+
+            <br /><br />
+
+            <button type="submit" class="login-btn">Verify OTP</button>
+          </div>
+        </form>
+
+        <p class="p-login">
+          Already have an account? <a href="#" id="p-login">Login</a>
+        </p>
+        <p class="terms">
+          By continuing, you agree to our <a href="#">Terms of Service</a> and
+          <a href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/Sell.js"></script>
+  </body>
+</html>

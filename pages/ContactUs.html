@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/Buy.css" />
+    <link rel="stylesheet" href="../assets/css/Collab.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    .contact-section {
+      background: #f9fbfc;
+      padding: 60px 20px;
+    }
+
+    .contact-section .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Paragraph Styling */
+    .contact-section p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    /* Optional Heading (if you add one) */
+    .contact-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #222;
+      text-align: center;
+    }
+
+    /* Highlight Brand Name */
+    .contact-section p strong {
+      color: #0aa;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .contact-section {
+        padding: 40px 15px;
+      }
+
+      .contact-section .container {
+        padding: 25px;
+      }
+
+      .contact-section p {
+        font-size: 15px;
+      }
+    }
+  </style>
+  <body>
+    <!-- Top Bar -->
+    <div class="topbar">
+      <div class="left">
+        <i class="fa-solid fa-phone"></i> +91-99710 19000 &nbsp;&nbsp; ✉
+        contact@builderfloor.in
+      </div>
+      <div class="right">
+        <button id="login">Login</button> |
+        <button id="register">Register</button>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/images/logo_.png" alt="BuilderFloor.in" />
+        </a>
+      </div>
+
+      <ul class="menu">
+        <li><a href="../pages/Buy.html">Buy</a></li>
+        <li><a href="../pages/Sell.html">Sell</a></li>
+        <li><a href="../pages/Rent.html">Rent</a></li>
+        <li><a href="../pages/Collab.html">Collaboration</a></li>
+        <li><a href="../pages/Sell.html">Post Property</a></li>
+        <li><a href="../pages/ContactUs.html">Contact Us</a></li>
+      </ul>
+      <a href="../pages/Sell.html">
+        <button class="post-btn">Post Free Property Ad</button>
+      </a>
+    </div>
+
+    <section class="contact-section">
+      <div class="container">
+        <p>
+          Welcome to BuilderFloor.in, your trusted destination for buying,
+          selling, and renting residential properties across India. We are
+          dedicated to simplifying the real estate journey by connecting
+          property seekers with genuine sellers, builders, and landlords on one
+          reliable platform.
+        </p>
+
+        <p>
+          At BuilderFloor.in, we specialize in builder floors, apartments,
+          villas, independent houses, and plots. Whether you are searching for
+          your dream home, looking to sell your property, or planning to rent
+          out your space, we provide you with the tools and exposure you need to
+          make the right decision.
+        </p>
+
+        <p>
+          Our platform focuses on verified listings, transparent information,
+          and a seamless user experience. We aim to eliminate the usual
+          complexities of real estate by offering easy search filters, detailed
+          property insights, and direct contact options between buyers and
+          sellers.
+        </p>
+
+        <p>
+          With a growing presence across major cities in India, BuilderFloor.in
+          is committed to helping you find the perfect property that fits your
+          lifestyle and budget. We believe in building trust, delivering value,
+          and making property transactions simple, secure, and efficient.
+          BuilderFloor.in - Your Property Partner.
+        </p>
+      </div>
+    </section>
+    <!-- -----------Login-------------------------------------- -->
+    <div class="login-modal" id="loginModal">
+      <div class="login-box">
+        <!-- Close Button -->
+        <button class="close-btn">&times;</button>
+
+        <h2>Welcome Back</h2>
+        <p class="sub-text">Login to access your dashboard</p>
+        <p class="sub-text small">Enter your credentials to log in</p>
+
+        <!-- Social Login -->
+        <button class="social-btn google">
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png"
+            alt="Google logo"
+            style="height: 15px; width: 15px" />
+          Continue with Google
+        </button>
+
+        <button class="social-btn facebook">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/960px-Facebook_Logo_2023.png"
+            alt="Facebook logo"
+            style="height: 15px; width: 15px; border-radius: 20px" />
+          Continue with Facebook
+        </button>
+
+        <!-- Divider -->
+        <div class="divider">
+          <span>Or continue with</span>
+        </div>
+
+        <!-- Toggle -->
+        <div class="toggle">
+          <button class="active" id="Email">
+            <i class="fa-regular fa-envelope"></i> &nbsp; Email
+          </button>
+          <button id="Mobile">
+            <i class="fa-solid fa-mobile-screen-button"></i> &nbsp; Mobile
+            Number
+          </button>
+        </div>
+
+        <!-- Form -->
+        <form id="emailForm">
+          <label>Email Address</label>
+          <input type="email" placeholder="you@example.com" required />
+
+          <label>Password</label>
+          <div class="password-field">
+            <input type="password" placeholder="Enter password" required />
+            <i class="fa-regular fa-eye"></i>
+          </div>
+
+          <a href="#" class="forgot">Forgot Password?</a>
+
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <form id="otpForm">
+          <!-- STEP 1: MOBILE -->
+          <div id="step1">
+            <label>Mobile Number</label>
+            <div class="phone-input">
+              <span>+91</span>
+              <input
+                type="tel"
+                maxlength="10"
+                pattern="[0-9]{10}"
+                placeholder="Enter mobile number"
+                required />
+            </div>
+
+            <button type="submit" class="login-btn" id="sendOtp">
+              Send OTP
+            </button>
+          </div>
+
+          <!-- STEP 2: OTP -->
+          <div id="step2" class="hidden">
+            <label>Enter OTP</label>
+
+            <input type="tel" required />
+
+            <p class="resend">Didn't receive OTP?</p>
+            <a href="#" id="Resend">Resend OTP</a>
+            <a href="" id="Change-num">change number</a>
+
+            <br /><br />
+
+            <button type="submit" class="login-btn">Verify OTP</button>
+          </div>
+        </form>
+
+        <p class="p-signup">
+          Don't have an account? <a href="#" id="p-signup">Sign Up</a>
+        </p>
+
+        <p class="terms">
+          By continuing, you agree to our <a href="#">Terms of Service</a> and
+          <a href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- -------------------Register-------------------------------------------------------------------------------- -->
+    <div class="register-modal" id="registerModal">
+      <div class="register-box">
+        <!-- Close Button -->
+        <button class="close-btn2">&times;</button>
+
+        <h2>Create Account</h2>
+        <p class="sub-text">Sign up to list and manage properties</p>
+        <p class="sub-text small">Enter your details to create an account</p>
+
+        <!-- Social Login -->
+        <button class="social-btn google">
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png"
+            alt="Google logo"
+            style="height: 15px; width: 15px" />
+          Continue with Google
+        </button>
+
+        <button class="social-btn facebook">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/960px-Facebook_Logo_2023.png"
+            alt="Facebook logo"
+            style="height: 15px; width: 15px; border-radius: 20px" />
+          Continue with Facebook
+        </button>
+
+        <!-- Divider -->
+        <div class="divider">
+          <span>Or continue with</span>
+        </div>
+
+        <!-- Toggle -->
+        <div class="toggle">
+          <button class="active" id="Email1">
+            <i class="fa-regular fa-envelope"></i> &nbsp; Email
+          </button>
+          <button id="Mobile1">
+            <i class="fa-solid fa-mobile-screen-button"></i> &nbsp; Mobile
+            Number
+          </button>
+        </div>
+
+        <!-- Form -->
+        <form id="emailForm1">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your full name" required />
+
+          <label>Email Address</label>
+          <input type="email" placeholder="you@example.com" required />
+
+          <label>Password</label>
+          <div class="password-field">
+            <input type="password" placeholder="Enter password" required />
+            <i class="fa-regular fa-eye"></i>
+          </div>
+          <br />
+          <button type="submit" class="login-btn">Create Account</button>
+        </form>
+
+        <form id="otpForm1">
+          <!-- STEP 1: MOBILE -->
+          <div id="step3">
+            <label id="nameInputlabel">Full Name</label>
+            <input
+              id="nameInput"
+              type="text"
+              placeholder="Enter your full name"
+              required />
+            <label>Mobile Number</label>
+            <div class="phone-input">
+              <span>+91</span>
+              <input
+                id="mobileInput1"
+                type="tel"
+                maxlength="10"
+                pattern="[0-9]{10}"
+                placeholder="Enter mobile number"
+                required />
+            </div>
+
+            <button type="submit" class="login-btn" id="sendOtp1">
+              Send OTP
+            </button>
+          </div>
+
+          <!-- STEP 2: OTP -->
+          <div id="step4" class="hidden">
+            <label>Enter OTP</label>
+
+            <input type="tel" required />
+
+            <p class="resend">Didn't receive OTP?</p>
+            <a href="#" id="Resend">Resend OTP</a>
+            <a href="" id="Change-num1">change number</a>
+
+            <br /><br />
+
+            <button type="submit" class="login-btn">Verify OTP</button>
+          </div>
+        </form>
+
+        <p class="p-login">
+          Already have an account? <a href="#" id="p-login">Login</a>
+        </p>
+        <p class="terms">
+          By continuing, you agree to our <a href="#">Terms of Service</a> and
+          <a href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
