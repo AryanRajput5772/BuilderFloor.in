@@ -118,6 +118,8 @@ body::-webkit-scrollbar {
   margin: 8px 171px;
   border-radius: 9px;
   margin-bottom: 20px;
+  width: min-content;
+  margin: 0 auto 20px auto;
 }
 .tabs a {
   text-decoration: none;
