@@ -173,3 +173,23 @@ document.querySelectorAll(".wishlist").forEach((wrapper) => {
     wrapper.classList.toggle("active");
   });
 });
+
+function showSection(type) {
+  const plots = document.getElementById("plotsSection");
+  const builders = document.getElementById("buildersSection");
+
+  const buttons = document.querySelectorAll(".colab-btn");
+
+  // remove active from all buttons
+  buttons.forEach((btn) => btn.classList.remove("active"));
+
+  if (type === "plots") {
+    plots.classList.add("active");
+    builders.classList.remove("active");
+    buttons[0].classList.add("active");
+  } else {
+    builders.classList.add("active");
+    plots.classList.remove("active");
+    buttons[1].classList.add("active");
+  }
+}
