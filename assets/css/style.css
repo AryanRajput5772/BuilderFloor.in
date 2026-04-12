@@ -4,13 +4,22 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
+html,
+body {
+  overflow-x: hidden !important;
+}
 body {
   background: #fff;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   display: none;
 }
+/* @media (max-width: 500px) {
+  body::-webkit-scrollbar {
+    display: block;
+  }
+} */
 
 /* Topbar */
 .topbar {
@@ -1649,7 +1658,7 @@ ul li {
 @media screen and (max-width: 508px) {
   .login-box {
     max-width: 940px;
-    width: 128%;
+    width: 100%;
     height: max-content;
     scale: 0.7;
   }
@@ -1693,7 +1702,7 @@ ul li {
 @media screen and (max-width: 508px) {
   .register-box {
     max-width: 940px;
-    width: 128%;
+    width: 100%;
     height: max-content;
     scale: 0.7;
   }
