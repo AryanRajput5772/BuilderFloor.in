@@ -555,6 +555,9 @@
   font-size: 13px;
   color: #7a828f;
   margin-bottom: 27px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 /* PRICE */
@@ -563,6 +566,16 @@
   font-weight: unset;
   color: #14b8a6;
   text-align: right;
+  white-space: nowrap;
+}
+
+@media (max-width: 400px) {
+  .pd-title {
+    font-size: 28px;
+  }
+  .pd-price-box {
+    font-size: 30px;
+  }
 }
 
 .pd-price-box span {
